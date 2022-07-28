@@ -4,14 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock | Paper | Scissors</title>
+    <title>STAR WARS BATTLE</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
-    <h1>ROCK. PAPER. SCISSORS.</h1>
-    <h3>Select your weapon</h3>
-    <h3>PLAYER</h3>
-    <h3>COMPUTER</h3>
+    <div class="wrapper">
+    <img src="Star Wars.png" alt="Star Wars Logo" id = 'title'>
+    <h3 class = 'select'>First to five wins | Select your weapon</h3>
+    <div class = 'buttons'>
+        <div class = "btn-align">
+            <button class="btn" id = "star"></button>
+            <h4>DEATH STAR</h4>
+        </div>
+        <div class = "btn-align">
+            <button class="btn" id = "falcon"></button>
+            <h4>MILLENIUM FALCON</h4>
+        </div>
+        <div class = "btn-align">
+            <button class="btn" id = "force"></button> 
+            <h4>THE FORCE</h4>
+        </div> 
+    </div>
+    <div class = 'score-round'>
+        <div class="scores">
+            <div class = "play">
+                <h4>JEDI</h4>
+                <h3 id="player">0</h3>
+            </div>
+            <div class = "comp">
+                <h4>EMPIRE</h4>
+                <h3 id="computer">0</h3>
+            </div>
+            <div class = "rnd">
+                <h4>ROUND</h4>
+                <h3 id="round">0</h3>
+            </div>  
+        </div>  
+        <div class="wins">
+            <div class = "rounds">
+                <div class = 'comp-select'>
+                    <h4>EMPIRE'S CHOICE</h4>
+                    <img src="empire.png" alt="Empire Logo" id = 'logo'>
+                </div>
+                <div class = "res">
+                    <div id="res-text">
+                        <h3 id="result">Only you have the power to defeat the dark side</h3>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class = "end">
+        <p id = "end-text">END GAME HIDDEN TEXT</p>
+        <button id="resets">PLAY AGAIN</button>
+    </div>
+    <div class = "biz">
+        <img src="duck.png" alt="Duck Logo" id="duck">
+        <h5>Created by Webfoot Studio</h5>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
